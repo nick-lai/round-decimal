@@ -1,0 +1,51 @@
+{
+  "name": "round-decimal",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Decimal rounding with ULP.",
+  "author": "Nick Lai <resxc13579@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/nick-lai/round-decimal#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nick-lai/round-decimal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nick-lai/round-decimal/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/round-decimal.umd.cjs",
+  "module": "./dist/round-decimal.js",
+  "exports": {
+    ".": {
+      "import": "./dist/round-decimal.js",
+      "require": "./dist/round-decimal.umd.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsc && vite build",
+    "coverage": "vitest run --coverage",
+    "test": "vite build && vitest",
+    "test:ui": "vite build && vitest --ui"
+  },
+  "devDependencies": {
+    "@vitest/coverage-c8": "^0.25.1",
+    "@vitest/ui": "^0.25.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3",
+    "vitest": "^0.25.1"
+  },
+  "keywords": [
+    "round",
+    "round-decimal",
+    "decimal",
+    "precision",
+    "rounding",
+    "ulp",
+    "places",
+    "math",
+    "library"
+  ]
+}

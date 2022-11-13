@@ -1,0 +1,26 @@
+# EditorConfig is awesome: https://editorconfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{js,jsx,cjs,mjs,ts,tsx,vue,json,html,css,scss,yml,yaml,md,mdx}]
+indent_size = 2
+max_line_length = 119
+
+[**.min.js]
+indent_style = false
+insert_final_newline = false
+
+[*.json]
+insert_final_newline = false
+
+[*.{md,mdx}]
+trim_trailing_whitespace = false
