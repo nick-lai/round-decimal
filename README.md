@@ -1,6 +1,9 @@
 # round-decimal
 
 [![Test](https://github.com/nick-lai/round-decimal/actions/workflows/test.yml/badge.svg)](https://github.com/nick-lai/round-decimal/actions/workflows/test.yml)
+[![Coverage Status](https://coveralls.io/repos/github/nick-lai/round-decimal/badge.svg?branch=main)](https://coveralls.io/github/nick-lai/round-decimal?branch=main)
+[![npm](https://img.shields.io/npm/v/round-decimal)](https://www.npmjs.com/package/round-decimal)
+[![Bundle Size](https://img.shields.io/bundlephobia/minzip/round-decimal)](https://bundlephobia.com/package/round-decimal)
 
 Decimal rounding with ULP.
 
