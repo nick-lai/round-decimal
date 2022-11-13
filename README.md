@@ -79,6 +79,8 @@ console.log(roundDecimal(10000000000000.1 + 10000000000000.2, 2)); // 2000000000
 console.log(roundDecimal(1.3549999999999998)); // 1.355
 ```
 
+Try it out on [JSFiddle](https://jsfiddle.net/nick_lai/h09dfL5o/).
+
 ## License
 
 [MIT](https://github.com/nick-lai/round-decimal/blob/main/LICENSE)
