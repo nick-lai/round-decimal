@@ -5,7 +5,7 @@
 [![npm](https://img.shields.io/npm/v/round-decimal)](https://www.npmjs.com/package/round-decimal)
 [![Bundle Size](https://img.shields.io/bundlephobia/minzip/round-decimal)](https://bundlephobia.com/package/round-decimal)
 
-Decimal rounding with ULP.
+Decimal rounding with [ULP](https://w.wiki/5xCp).
 
 > **Warning**  
 > Work in process
