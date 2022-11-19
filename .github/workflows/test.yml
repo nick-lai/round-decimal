@@ -9,15 +9,32 @@ jobs:
       matrix:
         node-version: [18.x, 19.x]
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Install pnpm
+      uses: pnpm/action-setup@v2
+      with:
+        version: 7
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm run test
-    - run: npm run coverage
-    - run: npm run build
+        cache: 'pnpm'
+
+    - name: Install dependencies
+      run: pnpm install
+
+    - name: Build
+      run: pnpm run build
+
+    - name: Test
+      run: pnpm run test
+
+    - name: Coverage
+      run: pnpm run coverage
+
     - name: Coveralls Parallel
       uses: coverallsapp/github-action@master
       with:
