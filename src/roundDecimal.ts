@@ -6,7 +6,9 @@ function getSignificantFractionDigits (value: number): number {
   return Math.trunc(Math.abs(Math.log10(approximateUlp(value))));
 }
 
-function roundDecimal (value: number, minSignificantFractionDigits: number = 3): number {
+const defaultMinSignificantFractionDigits: number = 3;
+
+function roundDecimal (value: number, minSignificantFractionDigits: number = defaultMinSignificantFractionDigits): number {
   const significantFractionDigits: number = getSignificantFractionDigits(value);
 
   if (significantFractionDigits < minSignificantFractionDigits) {
@@ -23,5 +25,7 @@ function roundDecimal (value: number, minSignificantFractionDigits: number = 3):
 export {
   approximateUlp,
   getSignificantFractionDigits,
+  defaultMinSignificantFractionDigits,
+  roundDecimal,
   roundDecimal as default,
 };
