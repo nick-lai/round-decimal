@@ -1,7 +1,7 @@
 {
   "name": "round-decimal",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Decimal rounding with ULP.",
   "author": "Nick Lai <resxc13579@gmail.com>",
   "license": "MIT",
